@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.gameBoard{
+    width: 100%;
+    height: 1500px;
+    border-bottom: 60px solid rgb(44, 167, 27);
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(65, 131, 163), rgb(210, 244, 255));
+}
+
+.crab{
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    animation: crabAndar 3s infinite linear;
+}    
+
+.sonic{
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    
+}    
+
+.ring{
+    position: absolute;
+    bottom: 70px;
+    width: 150px;
+    animation: ringAndar 5s infinite linear;
+}
+.pulo{
+    animation: pulo 800ms ease-out;
+}
+
+@keyframes crabAndar{
+
+    from {
+        right: -400px;
+
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes ringAndar{
+
+    from {
+        right: -50%;
+
+    }
+
+    to{
+        right: 150%;
+    }
+}
+
+@keyframes pulo{
+
+    0%{
+        bottom : 0px;
+    }
+
+    40%{
+        bottom : 600px;
+    }
+
+    50%{
+        bottom : 600px;
+    }
+
+    60%{
+        bottom : 600px;
+    }
+
+    100%{
+        bottom : 0px;
+    }
+
+
+}
